@@ -1,0 +1,128 @@
+* {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: auto !important;
+            font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+            background-color: #eee;
+            min-height: 100vh;
+            max-width: 1024px;
+        }
+
+        a,
+        a:active,
+        a:link,
+        a:visited {
+            text-decoration: none;
+        }
+
+        .item {
+            display: block;
+            position: relative;
+            height: 250px;
+            border-radius: 30px;
+            overflow: hidden;
+            box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.3);
+            max-width: 350px;
+            margin: auto;
+        }
+
+        .item-profile-img {
+            height: 70%;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .item-description-bk {
+            background-image: linear-gradient(0deg, #030202, #898989);
+            border-radius: 30px;
+            position: absolute;
+            top: 55%;
+            left: -5px;
+            height: 65%;
+            width: 108%;
+            transform: skew(19deg, -9deg);
+        }
+
+        .item-logo {
+            height: 80px;
+            width: 80px;
+            border-radius: 20px;
+            background-color: #fff;
+            position: absolute;
+            bottom: 30%;
+            left: 30px;
+            overflow: hidden;
+            box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.7);
+        }
+
+        .item-logo img {
+            height: 100%;
+        }
+
+        .item-description {
+            position: absolute;
+            color: #fff;
+            font-weight: 900;
+            right: 20px;
+            bottom: 60px;
+            font-size: 20px;
+        }
+
+        .item-btn {
+            position: absolute;
+            color: #fff;
+            right: 30px;
+            bottom: 10%;
+            padding: 10px 20px;
+            border: 2px solid #fff;
+            border-radius: 30px;
+            font-weight: bold;
+            background: #ff0000;
+        }
+
+        .item-btn-disabled {
+            color: #ffd600;
+            border: 2px solid #ffd600;
+            background: #3d3d3d;
+        }
+
+        .item-btn svg {
+            vertical-align: bottom;
+        }
+
+        .item-date {
+            position: absolute;
+            color: #fff;
+            left: 30px;
+            bottom: 10%;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        ul>li {
+            width: 33%;
+            padding: 10px;
+            margin: 20px 0;
+        }
+
+        @media (max-width: 1024px) {
+            ul>li {
+                width: 50%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            ul>li {
+                width: 100%;
+            }
+        }
